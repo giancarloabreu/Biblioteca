@@ -1,4 +1,3 @@
-
 public class MainEx3 {
     public static void main(String[] args) {
 
@@ -7,11 +6,11 @@ public class MainEx3 {
         livros[1] = "Java: Como Programar";
         livros[2] = "Estruturas de Dados";
 
-        Biblioteca b = new Biblioteca("Central", livros);
+        Biblioteca bib = new Biblioteca("Central", livros);
 
-        b.imprimirLivros();
-        System.out.println("Livros disponíveis: " + b.contarLivros());
-        System.out.println("Tem 'codigo Limpo'? " + b.verificarDisponibilidade("codigo Limpo"));
-        System.out.println("Tem 'Interestelar'? " + b.verificarDisponibilidade("Interestelar"));
+        bib.imprimirLivros();
+        System.out.println("Livros disponíveis: " + bib.contarLivros());
+        System.out.println("Tem 'codigo Limpo'? " + bib.verificarDisponibilidade("codigo Limpo"));
+        System.out.println("Tem 'Interestelar'? " + bib.verificarDisponibilidade("Interestelar"));
     }
 }
